@@ -66,16 +66,6 @@
 :root.light .landing-theme-toggle .theme-icon-moon {
   display: block;
 }
-@media (max-width: 400px) {
-  .landing-nav {
-    flex-wrap: wrap;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  .landing-account {
-    margin-left: auto;
-  }
-}
 .landing-auth-button {
   background: transparent;
   border: 0;
@@ -1015,9 +1005,15 @@
     display: none;
   }
   .landing-hero {
-    gap: 28px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 48px;
     padding-top: 44px;
     padding-bottom: 48px;
+  }
+  .hero-notebook-wrapper {
+    width: 100%;
+    max-width: 560px;
+    justify-self: center;
   }
   .hero-kicker {
     font-size: 10px;
@@ -1091,13 +1087,31 @@
   }
   .landing-nav {
     min-height: 82px;
-    gap: 15px;
+    gap: 12px;
   }
-  .wordmark strong {
-    font-size: 23px;
+  .landing-logo {
+    flex-shrink: 0;
+  }
+  .landing-nav .wordmark {
+    gap: 8px;
+  }
+  .landing-nav .wordmark strong {
+    font-size: 21px;
+  }
+  .landing-nav .crebry-mark {
+    width: 26px;
+    height: 26px;
   }
   .landing-account {
-    gap: 13px;
+    flex-shrink: 0;
+    gap: 10px;
+  }
+  .landing-theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+  .landing-auth-button {
+    white-space: nowrap;
   }
   .landing-account .button {
     padding: 9px 12px;
@@ -1121,16 +1135,43 @@
   }
   .hero-copy > p {
     font-size: 15px;
-    max-width: 340px;
+  }
+  .landing-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .secondary-link {
+    min-height: 36px;
   }
   .hero-footnote {
+    display: block;
     font-size: 10px;
+    padding-left: 23px;
+    position: relative;
+  }
+  .hero-footnote > svg {
+    position: absolute;
+    left: 0;
+    top: 2px;
   }
   .hero-notebook {
     padding: 20px 22px 0;
   }
   .hero-notebook h2 {
-    font-size: 24px;
+    font-size: clamp(20px, 5.5vw, 24px);
+  }
+  .notebook-top > span:last-child {
+    flex-shrink: 0;
+  }
+  .notebook-source {
+    gap: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .notebook-source > div {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
   .product-caption > span:last-child,
   .product-bottom > span {
@@ -1149,6 +1190,7 @@
     flex-direction: row;
     gap: 5px;
     align-items: center;
+    flex-wrap: wrap;
   }
   .preview-brand {
     padding: 0;
@@ -1235,5 +1277,43 @@
   .landing-footer > span {
     order: 3;
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .landing-nav,
+  .landing-hero,
+  .landing-product,
+  .landing-method,
+  .landing-private,
+  .landing-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .landing-nav {
+    gap: 10px;
+  }
+  .landing-nav .wordmark {
+    gap: 6px;
+  }
+  .landing-nav .wordmark strong {
+    font-size: 20px;
+  }
+  .landing-nav .crebry-mark {
+    width: 24px;
+    height: 24px;
+  }
+  .landing-account {
+    gap: 8px;
+  }
+  .landing-theme-toggle {
+    width: 32px;
+    height: 32px;
+  }
+  .landing-auth-button {
+    font-size: 11px;
+  }
+  .landing-account .button {
+    padding: 9px 10px;
   }
 }
