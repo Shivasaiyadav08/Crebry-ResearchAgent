@@ -73,6 +73,26 @@ Render's ephemeral container filesystem is not durable user storage. A new datab
 
 ## Technology stack
 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,python,fastapi,postgres,supabase,docker,sqlite,vercel&amp;perline=10" alt="Next.js, React, TypeScript, Python, FastAPI, PostgreSQL, Supabase, Docker, SQLite, Vercel" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LangGraph-181717?style=for-the-badge" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&amp;logo=langchain&amp;logoColor=white" alt="LangChain" />
+  <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&amp;logo=googlegemini&amp;logoColor=white" alt="Google Gemini" />
+  <img src="https://img.shields.io/badge/Tavily-2563EB?style=for-the-badge" alt="Tavily" />
+  <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&amp;logo=clerk&amp;logoColor=white" alt="Clerk" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Zustand-453F39?style=for-the-badge" alt="Zustand" />
+  <img src="https://img.shields.io/badge/React_Flow-FF0072?style=for-the-badge" alt="React Flow" />
+  <img src="https://img.shields.io/badge/Chroma-9333EA?style=for-the-badge" alt="Chroma" />
+  <img src="https://img.shields.io/badge/Render-18181B?style=for-the-badge&amp;logo=render&amp;logoColor=white" alt="Render" />
+  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&amp;logo=pytest&amp;logoColor=white" alt="pytest" />
+</p>
+
 | Layer | Tools | Purpose |
 |---|---|---|
 | Frontend | Next.js, React, TypeScript | Research UI, server rendering, authenticated API proxy |
@@ -85,6 +105,7 @@ Render's ephemeral container filesystem is not durable user storage. A new datab
 | Local alternatives | SQLite, Chroma, optional Sentence Transformers/PyTorch | Local storage and CPU embeddings |
 | Document processing | PyMuPDF, python-docx, LangChain text splitters | Extraction, page rendering, text chunking |
 | Delivery/verification | Docker, uv, Render, Vercel, pytest, Ruff, Vitest, ESLint | Reproducible dependencies, hosting, regression checks |
+
 
 ## Local setup
 
